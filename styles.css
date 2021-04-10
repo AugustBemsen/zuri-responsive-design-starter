@@ -7,6 +7,11 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 div.nav-bar {
     display: flex;
     justify-content: space-between;
@@ -198,7 +203,7 @@ div.circle {
     border-radius: 50%;
     background: #bcc3c7;
     margin-top: 2rem;
-    
+
 }
 
 div.box1 h5 {
@@ -232,10 +237,10 @@ div.gallery-content p {
 }
 
 div.gallery-img {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
 }
 
 div.img {
@@ -344,4 +349,146 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+
+
+/* 
+
+Media Queries
+
+
+*/
+
+@media screen and (max-width: 768px) {
+    ul.nav-links {
+        display: none;
+    }
+
+    div.hero-section {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    div.hero-content-heading {
+        text-align: left;
+    }
+
+
+    div.hero-content-heading p {
+        text-align: left;
+    }
+
+    div.hero-content-btn {
+        justify-content: left;
+    }
+
+    div.hero-content-btn a {
+        background: #E44C65;
+        text-decoration: none;
+        color: #bcc3c7;
+        font-size: 0.9rem;
+        padding: 10px 30px;
+        border-radius: 3px;
+        letter-spacing: 2px;
+    }
+
+    div.hero-background {
+        padding: 2rem;
+
+    }
+
+    div.background {
+        padding: 0.9rem;
+        width: 100%;
+        height: auto;
+    }
+
+    div.background h4 {
+        padding: 1rem;
+    }
+
+    div.background p {
+        padding-left: 1rem;
+        font-size: 0.7rem;
+        text-align: left;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+
+    div.snapshot-team p {
+        font-size: 0.9rem;
+    }
+
+    div.snapshot-box {
+        padding: 4rem 2rem;
+    }
+
+    div.snapshot-box-content {
+        display: block;
+        width: 100%;
+    }
+
+    div.box1,
+    div.box3 {
+        padding: 10px 0;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    div.gallery-section {
+        padding: 2rem;
+    }
+
+    div.img {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    div.img img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.footer {
+        padding: 2rem;
+    }
+
+    div.footer-input {
+        display: block;
+        padding-top: 3rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        margin: 0;
+        margin-bottom: 1.2rem;
+        width: 100%;
+    }
+
+    div.footer-textarea {
+        display: block;
+        padding: 0;
+    }
+
+    div.footer-btn {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    div.footer-btn a {
+        padding: 10px 30px;
+    }
+
+    div.footer h6 {
+        text-align: center;
+        color: #88949B;
+        font-size: 1rem;
+        padding-top: 3.3rem;
+    }
+
 }
